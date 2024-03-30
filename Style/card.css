@@ -1,0 +1,51 @@
+/*IMPORT*/
+@import url('vars.css');
+
+/*STYLE*/
+section.result-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+div.card{
+    background-color: var(--background-grey);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(216, 216, 216, 0.3);
+    color: var(--font-white);
+}
+
+div.card > img{
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+div.card > h1{
+    margin-bottom: 10px;
+}
+
+div.card > p{
+    margin-bottom: 20px;
+    font-weight: 300;
+    width: 300px;
+    word-break: break-all;
+}
+
+div.footer-card{
+    position: relative;
+}
+
+div.footer-card::after{
+    content: '------------';
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+div.footer-card > span{
+    margin: 0 10px 0 0;
+    font-weight: 400;
+}
