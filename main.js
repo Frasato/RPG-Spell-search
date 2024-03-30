@@ -17,6 +17,9 @@ async function createCard(nameSpell){
     containerResult.innerHTML = '';
 
     const responseData = await searchApi(nameSpell);
+    const [damageDatas, damageType] = Object.values(responseData.damage);
+    const [damageValue] = Object.values(damageType);
+    console.log(damageType, damageDatas, damageValue);
 
     containerResult.innerHTML = `
     <div class="card">
@@ -24,8 +27,8 @@ async function createCard(nameSpell){
         <h1>${responseData.name}</h1>
         <p>${responseData.desc}</p>
         <div class="footer-card">
-            <span>Damage: ${responseData.damage.damage_at_slot_level[3]}</span>
-            <span>Area: ${responseData.area_of_effect.size}</span>
+            <span>Damage: ${damageValue}</span>
+            <span>Alcance: ${responseData.range}</span>
         </div>
     </div>
     `;
