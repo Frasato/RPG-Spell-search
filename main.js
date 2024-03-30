@@ -18,16 +18,18 @@ async function createCard(nameSpell){
 
     const responseData = await searchApi(nameSpell);
     const [damageDatas, damageType] = Object.values(responseData.damage);
-    const [damageValue] = Object.values(damageType);
-    console.log(damageType, damageDatas, damageValue);
+    // console.log(damageType, damageDatas, damageValue);
+    const damageObj = {...damageDatas, ...damageType};
+    const damageArr = Object.values(damageObj);
+    console.log(damageArr[0]);
 
     containerResult.innerHTML = `
     <div class="card">
-        <img src="spells/${responseData.name}.jpg">
+        <img src="spells/${responseData.index}.jpg">
         <h1>${responseData.name}</h1>
         <p>${responseData.desc}</p>
         <div class="footer-card">
-            <span>Damage: ${damageValue}</span>
+            <span>Damage: ${damageArr[0]}</span>
             <span>Alcance: ${responseData.range}</span>
         </div>
     </div>
@@ -38,7 +40,7 @@ buttonSearch.addEventListener('click', ()=>{
 
     const valueSpellName = spellName.value.toLowerCase().trim().replace(' ', '-');
 
-    if(spellName.value == ''){
+    if(valueSpellName.value == ''){
         containerResult.innerHTML = ''
     }else{
         createCard(valueSpellName);
