@@ -71,3 +71,9 @@ containerResult.innerHTML = `<img src="spells/${responseData.index}.jpg">`;
 ```
 
 com isso, consegui resolver o problema de não ter imagens para complementar os cards.
+
+## Site
+
+Para ver ele funcionando, eu utilizei a Netlify para um hospedagem gratuita desse site.
+
+#### 🔗 <a href="https://rpgspellsearch.netlify.app/" target="_blank">RPG Spell Search</a>
