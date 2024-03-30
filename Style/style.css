@@ -1,6 +1,7 @@
 /*IMPORT COMPONENTS CSS*/
 @import url('header.css');
 @import url('vars.css');
+@import url('search.css');
 
 /*IMPORT FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');

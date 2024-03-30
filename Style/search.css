@@ -1,0 +1,43 @@
+/*IMPORT VARS*/
+@import url('vars.css');
+
+/*STYLE*/
+section.search-field{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+input#search{
+    height: 40px;
+    width: 40vw;
+    padding: 10px;
+    background-color: var(--background-grey);
+    border-bottom: 1px solid var(--font-white);
+    color: var(--font-white);
+}
+
+input#search::placeholder{
+    color: var(--placeholder-grey);
+}
+
+input#search:focus{
+    border-bottom: 1px solid var(--secundary-yellow);
+}
+
+section.search-field > button{
+    height: 40px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--font-white);
+    position: absolute;
+    z-index: 1;
+    left: 1020px;
+    cursor: pointer;
+}
+
+section.search-field > button:hover{
+    color: var(--primary-red);
+}

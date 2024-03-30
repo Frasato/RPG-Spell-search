@@ -1,7 +1,8 @@
 :root{
     --primary-red: #F00073;
     --secundary-yellow: #F0D500;
-    --secundary-blue: #00CFF0;
     --background-grey: #2C2C32;
     --font-white: rgb(216, 216, 216);
+    --elements-grey: rgb(83, 83, 83);
+    --placeholder-grey: #aaaaaa;
 }
