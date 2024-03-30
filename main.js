@@ -24,7 +24,7 @@ async function createCard(nameSpell){
         <h1>${responseData.name}</h1>
         <p>${responseData.desc}</p>
         <div class="footer-card">
-            <span>Damage: ${responseData.damage.damage_at_slot_level[7]}</span>
+            <span>Damage: ${responseData.damage.damage_at_slot_level[3]}</span>
             <span>Area: ${responseData.area_of_effect.size}</span>
         </div>
     </div>
