@@ -8,7 +8,7 @@ Nesse projeto, tive que estudar e aprender sobre as funções assíncronas, assi
 
 Em determinas magias, a API me retornava esses valores
 
-```JSON
+```Javascript
 damage:{
     damage_at_character_level:{
         "0": "1d10",
@@ -22,7 +22,7 @@ damage:{
 
 Em outras, a API me retornava com um nome de atributo diferente
 
-```JSON
+```Javascript
 damage:{
     damage_at_slot_level:{
         "0": "1d8",
