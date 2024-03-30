@@ -1,0 +1,25 @@
+/*IMPORT COMPONENTS CSS*/
+@import url('header.css');
+@import url('vars.css');
+
+/*IMPORT FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-size: 100%;
+    font-size: inherit;
+    vertical-align: baseline;
+    font-family: "Roboto", sans-serif;
+}
+
+/*Style Body*/
+body{
+    background-color: var(--background-grey);
+}

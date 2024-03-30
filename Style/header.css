@@ -1,0 +1,17 @@
+/*IMPORT VARS*/
+@import url('vars.css');
+
+/*STYLE*/
+header{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header > h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--font-white);
+}

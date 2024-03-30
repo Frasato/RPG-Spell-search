@@ -3,19 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Spells | Os Metres do RPG🔥</title>
+    <title>RPG Spells Seacrh</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
     <header>
         <h1>Os Metres do RPG🔥</h1>
         <h2>"Um pesquisador de magias"</h2>
         <h3>Obs: As magias devem ser escritas em inglês</h3>
+        <span class="prompt-warning"></span>
     </header>
 
     <main>
-        <section>
+        <section class="search-field">
             <input type="text" name="search" id="search" placeholder="Digite sua magia">
-            
+            <button>
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </section>
+        <section class="result-search">
+            <div class="card">
+                <img src="spells/fireball.jpg">
+                <h1>Fireball</h1>
+                <p>Description</p>
+                <div class="footer-card">
+                    <span>Damage:</span>
+                    <span>Area:</span>
+                    <span>Class Can Use:</span>
+                </div>
+            </div>
         </section>
     </main>
 
