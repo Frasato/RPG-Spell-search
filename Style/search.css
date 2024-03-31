@@ -41,3 +41,25 @@ section.search-field > button{
 section.search-field > button:hover{
     color: var(--primary-red);
 }
+
+/*RESPONSIVO*/
+@media screen and (max-width: 576px){
+    section.search-field > button{
+        height: 40px;
+        width: 50px;
+        background-color: rgba(0, 0, 0, 0);
+        color: var(--font-white);
+        position: absolute;
+        z-index: 1;
+        left: 350px;
+        cursor: pointer;
+    }
+    input#search{
+        height: 40px;
+        width: 60vw;
+        padding: 10px;
+        background-color: var(--background-grey);
+        border-bottom: 1px solid var(--font-white);
+        color: var(--font-white);
+    }
+}
