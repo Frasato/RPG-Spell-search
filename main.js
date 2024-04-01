@@ -52,8 +52,11 @@ buttonSearch.addEventListener('click', ()=>{
     const valueSpellName = spellName.value.toLowerCase().trim().replace(' ', '-');
 
     //Se o campo de pesquisa estiver vazio
-    if(valueSpellName.value == ''){
-        containerResult.innerHTML = ''
+    if(spellName.value == ''){
+        containerResult.innerHTML = `
+        <span class="prompt-warning">
+            <h1>Não tem essa magia no meu grimório</h1>
+        </span>`;
     }else{
         //Função que cria o card
         createCard(valueSpellName);
@@ -67,8 +70,11 @@ spellName.addEventListener('keypress', (event)=>{
     const valueSpellName = spellName.value.toLowerCase().trim().replace(' ', '-');
     
     //Se o campo de pesquisa estiver vazio
-    if(valueSpellName.value == ''){
-        containerResult.innerHTML = ''
+    if(spellName.value == ''){
+        containerResult.innerHTML = `
+        <span class="prompt-warning">
+            <h1>Não tem essa magia no meu grimório</h1>
+        </span>`;
     }
     //Se pressionar a tecla 'Enter'
     else if(event.key == 'Enter'){

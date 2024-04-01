@@ -4,6 +4,7 @@
 @import url('search.css');
 @import url('card.css');
 @import url('footer.css');
+@import url('./warning.css');
 
 /*IMPORT FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');

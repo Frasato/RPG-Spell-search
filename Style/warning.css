@@ -1,0 +1,17 @@
+@import url('./vars.css');
+
+/*STYLE*/
+header{
+    position: relative;
+}
+
+span.prompt-warning{
+    background-color: var(--primary-red);
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;    
+}
