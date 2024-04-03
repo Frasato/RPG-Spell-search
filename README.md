@@ -76,8 +76,4 @@ com isso, consegui resolver o problema de não ter imagens para complementar os 
 
 Para ver ele funcionando, eu utilizei a Netlify para um hospedagem gratuita desse site.
 
-<<<<<<< HEAD
-##### 🔗 <a href="https://spellsearch.netlify.app/" target="_blank">RPG Spell Search</a>
-=======
-##### 🔗 <a href="https://rpgspellsearch.netlify.app/" target="_blank">RPG Spell Search</a>
->>>>>>> dcb3f0fc5fb7681d685db6780675eb54a11167a1
+<a href="https://spellsearch.netlify.app/">Spell Search</a>
