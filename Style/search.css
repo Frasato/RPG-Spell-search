@@ -34,7 +34,7 @@ section.search-field > button{
     color: var(--font-white);
     position: absolute;
     z-index: 1;
-    left: 1020px;
+    left: 67%;
     cursor: pointer;
 }
 
@@ -43,23 +43,38 @@ section.search-field > button:hover{
 }
 
 /*RESPONSIVO*/
-@media screen and (max-width: 576px){
+@media screen and (max-width: 1400px){
     section.search-field > button{
-        height: 40px;
-        width: 50px;
-        background-color: rgba(0, 0, 0, 0);
-        color: var(--font-white);
-        position: absolute;
-        z-index: 1;
-        left: 350px;
-        cursor: pointer;
+        left: 67%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    section.search-field > button{
+        left: 82%;
     }
     input#search{
-        height: 40px;
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 992px){
+    section.search-field > button{
+        left: 81%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section.search-field > button{
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    section.search-field > button{
+        left: 72%;
+    }
+    input#search{
         width: 60vw;
-        padding: 10px;
-        background-color: var(--background-grey);
-        border-bottom: 1px solid var(--font-white);
-        color: var(--font-white);
     }
 }
